@@ -1,0 +1,26 @@
+# Example only — adapt to the application schema.
+schema_version: 1
+task:
+  id: task-001
+  project_id: example-project
+  title: "Implement a component"
+  status: draft
+  objective: "Describe the task outcome."
+  expected_artifacts:
+    - path: artifacts/code/component.ext
+      description: "Expected output file."
+  acceptance_criteria:
+    - id: AC-1
+      description: "The component builds successfully."
+      required: true
+      verification: build
+  dependencies: []
+  uncertainties:
+    - "List unresolved assumptions."
+  tool_requirements:
+    - tool: filesystem
+      permission: write_with_approval
+  plan: []
+  completion:
+    status: not_started
+    verification_report: null

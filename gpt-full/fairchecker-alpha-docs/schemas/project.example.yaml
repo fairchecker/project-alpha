@@ -1,0 +1,28 @@
+# Example only — adapt to the application schema.
+schema_version: 1
+project:
+  id: example-project
+  name: Example Project
+  status: active
+  created_at: 2026-11-10
+  objective: "Describe the project's primary objective."
+  artifact_goal: "Describe the concrete result to produce."
+  learning_goal: null
+  constraints:
+    - "List technical, time, privacy, or resource constraints."
+  preferences:
+    assistance_preset: collaborate
+    execution_policy: collaborative
+    explanation_policy: normal
+  learning_policy:
+    budget: low
+    unsolicited_learning_enabled: true
+    max_unsolicited_per_task: 1
+  permissions:
+    filesystem:
+      mode: read_only
+      allowed_paths: []
+    network:
+      mode: disabled
+  metadata:
+    owner_confirmation_required_for_decisions: true
